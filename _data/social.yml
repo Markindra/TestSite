@@ -1,0 +1,12 @@
+- name: Facebook
+  link: http://www.facebook.com/kendrickbrothers
+  icon: /assets/images/logos/f_logo_RGB-Blue_58.png
+- name: Instagram
+  link: 
+  icon: /assets/images/logos/Instagram_Glyph_Gradient_RGB.png
+- name: Twitter
+  link: https://twitter.com/KendrickBros
+  icon: /assets/images/logos/Twitter_social_icons_circle_blue.png
+- name: YouTube
+  link: https://www.youtube.com/c/TheKendrickBrothers
+  icon: /assets/images/logos/youtube_social_icon_red.png

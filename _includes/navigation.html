@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topBar">
+  <nav class="topNav" id="mytopNav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>{{ item.name | upcase }}</a>
+      {% endfor %}
+    <img class="navLogo" src="/assets/images/logos/kb_logo_wide.png">
+  </nav>
+</div>

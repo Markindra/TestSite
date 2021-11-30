@@ -1,0 +1,10 @@
+<p class="bottom_nav">&#169 2021 Kendrick Brothers, LLC All rights reserved<br>
+{% for item in site.data.bottom_nav %}
+<a href="{{ item.link }}">{{ item.name }}</a>
+{% endfor %}
+</p>
+<div class="social_box">
+{% for item in site.data.social %}
+<a href="{{ item.link }}" target="_blank"><img src="{{ item.icon }}" class="social_icon"></a>
+{% endfor %}
+</div>

@@ -1,0 +1,21 @@
+- name: Lordship
+  description: We submit to the Lordship of Jesus Christ in all things.
+  imageURL:
+  moreURL:
+
+- name: Integrity
+  description: We endeavor to honor our commitments and live out what we believe.
+  imageURL:
+  moreURL:
+
+- name: Teamwork
+  description: We seek to build and guard the unified collaboration of the team.
+  imageURL:
+  moreText: Meet the Team
+  moreURL: /team.html
+
+
+- name: Excellence
+  description: We desire to always keep growing toward a higher standard.
+  imageURL:
+  moreURL:

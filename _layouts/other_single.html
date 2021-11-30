@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% include breadcrumbs.html %}
+<h1>{{ page.title }}</h1>
+<p>Released on {{ page.year | date_to_string: "ordinal", "US" }}</p>
+{% if page.trailer %}
+<iframe width="560" height="315" src="{{ page.trailer }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endif %}
+{{ content }}
+<hr>
+<h2>Purchase from These Retailers</h2>
+{% if page.buyLinks.amazonBuy %}<a target="_blank" href="{{ page.buyLinks.amazonBuy }}"><img style="width: 72px;" src="/assets/images/logos/available_at_amazon_en_vertical_drk.png"></a>{% endif %}
+{% if page.buyLinks.cbdBuy %}<a target="_blank" href="{{ page.buyLinks.cbdBuy }}"><img style="width: 72px;" src="/assets/images/logos/cbd.png"></a>{% endif %}
+{% if page.buyLinks.mardelBuy %}<a target="_blank" href="{{ page.buyLinks.mardelBuy }}"><img style="width: 72px;" src="/assets/images/logos/original_mardel_logo_m_HR.png"></a>{% endif %}
+{% if page.buyLinks.lifewayBuy %}<a target="_blank" href="{{ page.buyLinks.lifewayBuy }}"><img style="width: 72px;" src="/assets/images/logos/lifeway_logo_gray_shadow.svg"></a>{% endif %}
+{% if page.buyLinks.walmartBuy %}<a target="_blank" href="{{ page.buyLinks.walmartBuy }}"><img style="width: 72px;" src="/assets/images/logos/Walmart spark logo-digital-alpha.png"></a>{% endif %}
+<h2>Stream Today</h2>
+{% if page.streamLinks.amazonStream %}<a target="_blank" href="{{ page.streamLinks.amazonStream }}"><image style="width: 80px" src="/assets/images/logos/Prime_VIdeo_Logo_Mature_Market_Pitch_Dark_Blue_RGB.png"</a>{% endif %}
+{% if page.streamLinks.appleStream %}<a target="_blank" href="{{ page.streamLinks.appleStream }}"><image style="width: 80px" src="/assets/images/logos/UK-US_Apple_TV_Watch_Badge_RGB_onscreen_092419.svg"</a>{% endif %}
+{% if page.streamLinks.googleStream %}<a target="_blank" href="{{ page.streamLinks.googleStream }}"><image style="width: 80px" src="/assets/images/logos/google-play-badge.png"</a>{% endif %}
+{% if page.streamLinks.vuduStream %}<a target="_blank" href="{{ page.streamLinks.vuduStream }}"><image style="width: 80px" src="/assets/images/logos/vudu_logo.png"</a>{% endif %}

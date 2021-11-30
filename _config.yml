@@ -1,0 +1,9 @@
+collections:
+  films:
+    output: true
+  books:
+    output: true
+  members:
+    output: true
+  studies:
+    output: true

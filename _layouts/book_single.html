@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<h3>{{ page.subtitle }}</h3>
+{% if page.year %}
+<p>Released on {{ page.published | date_to_string: "ordinal", "US" }}</p>
+{% endif %}
+{% if page.trailer %}
+<iframe width="560" height="315" src="{{ page.trailer }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endif %}
+{% if page.coverImage %}
+<img style="width:250px;" src="{{ page.coverImage }}">
+{% endif %}
+{{ content }}
+<hr>
+<h2>Purchase from These Retailers</h2>
+{% if page.buyLinks.amazonBuy %}<a target="_blank" href="{{ page.buyLinks.amazonBuy }}"><img style="width: 72px;" src="/assets/images/logos/available_at_amazon_en_vertical_drk.png"></a>{% endif %}
+{% if page.buyLinks.cbdBuy %}<a target="_blank" href="{{ page.buyLinks.cbdBuy }}"><img style="width: 72px;" src="/assets/images/logos/cbd.png"></a>{% endif %}
+{% if page.buyLinks.lifewayBuy %}<a target="_blank" href="{{ page.buyLinks.lifewayBuy }}"><img style="width: 72px;" src="/assets/images/logos/lifeway_logo_gray_shadow.svg"></a>{% endif %}
+{% if page.buyLinks.walmartBuy %}<a target="_blank" href="{{ page.buyLinks.walmartBuy }}"><img style="width: 72px;" src="/assets/images/logos/Walmart spark logo-digital-alpha.png"></a>{% endif %}
