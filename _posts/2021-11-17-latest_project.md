@@ -1,10 +1,14 @@
 ---
 title: risus iaculis euismod
-subtitle:
-featureImage: /assets/images/featured_image/latest_feature_image.png
+subtitle: Donec eu mattis nulla
+featureImage: /assets/images/featured_image/AlexPoints.jpg
+featureCaption: Alex Kendrick rides an ATV on the set of the Kendrick Brothers' newest feature
 imageAlt: Alex Points to Camera
 layout: post
 author: KBros Author
+category: updates
+brief: This is a short sentence to pique interest in the article
+tags: films production
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra fringilla tellus, id congue turpis pellentesque vel. Vestibulum sit amet neque vehicula, tincidunt urna venenatis, finibus massa. Vestibulum pretium sapien eget orci ornare hendrerit. Etiam vitae ante tellus. Curabitur eu magna blandit, fermentum eros in, vulputate arcu. Nam vel turpis ultricies, semper nulla non, tincidunt ex. Phasellus dapibus libero quis aliquet volutpat. Etiam magna leo, molestie vel magna eget, varius convallis odio. Donec eu mattis nulla, et facilisis libero. Vestibulum non lobortis odio, in rhoncus dolor. Nunc et sem quam. Proin semper, quam id placerat pulvinar, sem urna maximus enim, ac sollicitudin dolor ligula ut ex. Morbi sollicitudin nisi ac nisi suscipit, vitae semper tortor tristique. Morbi aliquam maximus purus. Sed sit amet feugiat erat. In eu fringilla ipsum.
 

@@ -1,21 +1,28 @@
 - name: Lordship
-  description: We submit to the Lordship of Jesus Christ in all things.
-  imageURL:
+  description: Submit to the Lordship of Jesus Christ in all things.
+  imageURL: /assets/images/values/Lordship.jpg
+  imageAlt: Alex and 'Miss Clara' praying on set
+  moreText:
   moreURL:
 
 - name: Integrity
-  description: We endeavor to honor our commitments and live out what we believe.
-  imageURL:
+  description: Honor our commitments and live out what we believe.
+  imageURL: /assets/images/values/Integrity.jpg
+  imageAlt: Stephen and kids on set
+  moreText:
   moreURL:
 
 - name: Teamwork
-  description: We seek to build and guard the unified collaboration of the team.
-  imageURL:
+  description: Build and guard a unified, collaborative team.
+  imageURL: /assets/images/values/Teamwork.jpg
+  imageAlt: Alex talks with crew on set
   moreText: Meet the Team
   moreURL: /team.html
 
 
 - name: Excellence
-  description: We desire to always keep growing toward a higher standard.
-  imageURL:
+  description: Keep growing toward a higher standard.
+  imageURL: /assets/images/values/Excellence.jpg
+  imageAlt: Crew sets up shot on set
+  moreText:
   moreURL:

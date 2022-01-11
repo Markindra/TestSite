@@ -1,22 +1,15 @@
 ---
 layout: film_single
-name: Courageous Legacy
+title: Courageous Legacy
 year: 2021-09-24
 packshot: /assets/images/filmpackshots/CourageousLegacy_pack.jpg
 trailer: https://www.youtube.com/embed/1XPgPiLeLWg
 buyLinks:
-  amazonBuy:
-  cbdBuy:
-  mardelBuy:
-  lifewayBuy:
-  walmartBuy:
 streamLinks:
-  amazonStream:
-  appleStream:
-  googleStream:
-  vuduStream:
 tags: [Resolution for Men, Resolution for Women, Courageous]
 premium: true
+movieSite: http://www.courageousthemovie.com
+family: Courageous
 ---
 Four men, one calling: To serve and protect. As law enforcement officers, they are confident and focused. Yet at the end of the day, they face a challenge that none of them are truly prepared to tackle: fatherhood. While they consistently give their best on the job, good enough seems to be all they can muster as dads. When tragedy hits home, they are left wrestling with their hopes, their fears, their faith, and their fathering. Can a newfound urgency help these dads draw closer to God ... and to their children?
 

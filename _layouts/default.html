@@ -1,18 +1,28 @@
 <!doctype html>
-<html>
+<html lang-"en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <title>{{ page.title }}</title>
   </head>
   <body>
+    <div class="container px-0 master">
     {% include navigation.html %}
-    <div class="content">{{ content }}</div>
+
+
+    {{ content }}
+
+    </div>
     {% include bottomNav.html %}
 
+    {% include scripts.html %}
+
   </body>
-  <script type="text/javascript">
+<!--  <script type="text/javascript">
 function myFunction() {
   var x = document.getElementById("mytopNav");
   if (x.className === "topNav") {
@@ -21,5 +31,5 @@ function myFunction() {
     x.className = "topNav";
   }
 }
-</script>
+</script> -->
 </html>

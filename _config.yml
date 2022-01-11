@@ -1,9 +1,14 @@
 collections:
   films:
     output: true
+    sort_by: year
   books:
     output: true
+    sort_by: family
   members:
     output: true
   studies:
+    output: true
+    sort_by: family
+  articles:
     output: true

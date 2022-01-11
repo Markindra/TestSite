@@ -6,10 +6,14 @@ published: 2013-09-01
 coverImage: /assets/images/bookImages/the_love_dare_day_by_day_book.jpg
 family: Fireproof
 buyLinks:
-  amazonBuy: https://www.amazon.com/Love-Dare-Day-Devotions-Couples/dp/1433681374/ref=sr_1_1?keywords=The+Love+Dare+Day+by+Day&qid=1637338791&qsid=141-6196979-4180442&sr=8-1&sres=1433681374%2C1433680351%2C1433679590%2C1433668521%2C1433679604%2CB09LGQVN4Q%2CB09LGY7WRQ%2C1430032227%2C0978715373%2C1414329733%2C1680993399%2C1433681226%2C080241270X%2C1424559480%2C1419753967%2CB078NCSB1M&srpt=ABIS_BOOK
-  cbdBuy: https://www.christianbook.com/love-dare-year-devotions-for-couples/stephen-kendrick/9781433681370/pd/681370?event=ESRCN
-  lifewayBuy: https://www.lifeway.com/en/product/the-love-dare-day-by-day-P005572093
-  walmartBuy: https://www.walmart.com/ip/The-Love-Dare-Day-by-Day-A-Year-of-Devotions-for-Couples-Used-Hardcover/659732951
+  - name: amazon
+    buyURL: https://www.amazon.com/Love-Dare-Day-Devotions-Couples/dp/1433681374/ref=sr_1_1?keywords=The+Love+Dare+Day+by+Day&qid=1637338791&qsid=141-6196979-4180442&sr=8-1&sres=1433681374%2C1433680351%2C1433679590%2C1433668521%2C1433679604%2CB09LGQVN4Q%2CB09LGY7WRQ%2C1430032227%2C0978715373%2C1414329733%2C1680993399%2C1433681226%2C080241270X%2C1424559480%2C1419753967%2CB078NCSB1M&srpt=ABIS_BOOK
+  - name: cbd
+    buyURL: https://www.christianbook.com/love-dare-year-devotions-for-couples/stephen-kendrick/9781433681370/pd/681370?event=ESRCN
+  - name: lifeway
+    buyURL: https://www.lifeway.com/en/product/the-love-dare-day-by-day-P005572093
+  - name: walmart
+    buyURL: https://www.walmart.com/ip/The-Love-Dare-Day-by-Day-A-Year-of-Devotions-for-Couples-Used-Hardcover/659732951
 tags: [Fireproof, The Love Dare, The Love Dare for Parents]
 premium:
 ---

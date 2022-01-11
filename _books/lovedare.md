@@ -6,10 +6,14 @@ published: 2013-01-01
 coverImage: /assets/images/bookImages/the_love_dare_book.png
 family: Fireproof
 buyLinks:
-  amazonBuy: https://www.amazon.com/Love-Dare-Alex-Kendrick/dp/1433679590/ref=sr_1_1?keywords=The+Love+Dare&qid=1637337964&qsid=141-6196979-4180442&sr=8-1&sres=1433679590%2C1433681374%2C1433679604%2C1433668521%2CB004G91KXW%2C1430032227%2CB0036UK7VI%2CB01FODD0RM%2CB09LGQVN4Q%2C080241270X%2CB09LGY7WRQ%2C0978715373%2C1592407331%2CB07LFKT9JC%2CB00GQE9CXA%2C1433681226&srpt=ABIS_BOOK
-  cbdBuy: https://www.christianbook.com/the-love-dare-stephen-kendrick/9781433679599/pd/679599?event=ESRCN
-  lifewayBuy: https://www.lifeway.com/en/product/the-love-dare-P005534661
-  walmartBuy: https://www.walmart.com/ip/The-Love-Dare-New-Revised-Edition-Paperback-9781433679599/21629117
+  - name: amazon
+    buyURL: https://www.amazon.com/Love-Dare-Alex-Kendrick/dp/1433679590/ref=sr_1_1?keywords=The+Love+Dare&qid=1637337964&qsid=141-6196979-4180442&sr=8-1&sres=1433679590%2C1433681374%2C1433679604%2C1433668521%2CB004G91KXW%2C1430032227%2CB0036UK7VI%2CB01FODD0RM%2CB09LGQVN4Q%2C080241270X%2CB09LGY7WRQ%2C0978715373%2C1592407331%2CB07LFKT9JC%2CB00GQE9CXA%2C1433681226&srpt=ABIS_BOOK
+  - name: cbd
+    buyURL: https://www.christianbook.com/the-love-dare-stephen-kendrick/9781433679599/pd/679599?event=ESRCN
+  - name: lifeway
+    buyURL: https://www.lifeway.com/en/product/the-love-dare-P005534661
+  - name: walmart
+    buyURL: https://www.walmart.com/ip/The-Love-Dare-New-Revised-Edition-Paperback-9781433679599/21629117
 tags: [Fireproof, The Love Dare Day by Day, The Love Dare for Parents]
 premium:
 ---

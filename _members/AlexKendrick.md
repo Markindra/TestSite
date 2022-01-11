@@ -2,6 +2,7 @@
 name: Alex Kendrick
 role: Director & Writer
 imageURL: /assets/images/teampics/alexKendrick.jpg
+imageAlt: Headshot of Alex Kendrick
 index: 1
 ---
 Alex Kendrick is a follower of Jesus Christ and has a passion to tell stories of hope and redemption. He is a co-writer for the screenplays and books, and he's the director and editor for Kendrick Brothers' films.

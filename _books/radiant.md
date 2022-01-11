@@ -6,10 +6,14 @@ published: 2019-08-06
 coverImage: /assets/images/bookImages/radiant_book.jpg
 family: Overcomer
 buyLinks:
-  amazonBuy: https://www.amazon.com/Radiant-Light-Girls-Young-Women/dp/1535949872/ref=sr_1_1?keywords=Radiant+Shirer&qid=1637272719&qsid=141-6196979-4180442&sr=8-1&sres=1535949872%2C153596006X%2C1646111273%2C1462774040%2C1462776345%2C1087742773%2C1462794963%2C1538717360%2C1648702902%2C1433690187%2C0764238396%2C1535924195%2CB00Q72WFDK%2CB01N132COK%2C0785234187%2C0736966013&srpt=ABIS_BOOK
-  cbdBuy: https://www.christianbook.com/radiant-his-light-your-life/priscilla-shirer/9781535949873/pd/949871?event=ESRCN
-  lifewayBuy: https://www.lifeway.com/en/product/radiant-P005813514
-  walmartBuy: https://www.walmart.com/ip/Radiant-His-Light-Your-Life-for-Teen-Girls-and-Young-Women-Paperback-9781535949873/664916590
+  - name: amazon
+    buyURL: https://www.amazon.com/Radiant-Light-Girls-Young-Women/dp/1535949872/ref=sr_1_1?keywords=Radiant+Shirer&qid=1637272719&qsid=141-6196979-4180442&sr=8-1&sres=1535949872%2C153596006X%2C1646111273%2C1462774040%2C1462776345%2C1087742773%2C1462794963%2C1538717360%2C1648702902%2C1433690187%2C0764238396%2C1535924195%2CB00Q72WFDK%2CB01N132COK%2C0785234187%2C0736966013&srpt=ABIS_BOOK
+  - name: cbd
+    buyURL: https://www.christianbook.com/radiant-his-light-your-life/priscilla-shirer/9781535949873/pd/949871?event=ESRCN
+  - name: lifeway
+    buyURL: https://www.lifeway.com/en/product/radiant-P005813514
+  - name: walmart
+    buyURL: https://www.walmart.com/ip/Radiant-His-Light-Your-Life-for-Teen-Girls-and-Young-Women-Paperback-9781535949873/664916590
 tags:
 premium:
 ---

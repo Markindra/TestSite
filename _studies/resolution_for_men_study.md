@@ -4,17 +4,6 @@ title: Resolution for Men Bible Study
 year:
 coverImage: /assets/images/bookImages/resolution_for_men_bible_study.jpg
 trailer:
-buyLinks:
-  amazonBuy:
-  cbdBuy:
-  mardelBuy:
-  lifewayBuy:
-  walmartBuy:
-streamLinks:
-  amazonStream:
-  appleStream:
-  googleStream:
-  vuduStream:
 family: Courageous
 tags:
 premium:

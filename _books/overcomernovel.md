@@ -6,11 +6,10 @@ published: 2019-07-23
 coverImage: /assets/images/bookImages/overcomer_the_novel.jpg
 family: Overcomer
 buyLinks:
-  amazonBuy: https://www.amazon.com/Overcomer-Softcover-Novelization-Based-Inspirational-Book-Also-Available/dp/1496438620/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1637277877&sr=8-4
-  cbdBuy:
-  mardelBuy:
-  lifewayBuy:
-  walmartBuy: https://www.walmart.com/ip/Overcomer-Paperback-9781496438621/530487614
+  - name: amazon
+    buyURL: https://www.amazon.com/Overcomer-Softcover-Novelization-Based-Inspirational-Book-Also-Available/dp/1496438620/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1637277877&sr=8-4
+  - name: walmart
+    buyURL: https://www.walmart.com/ip/Overcomer-Paperback-9781496438621/530487614
 tags: [Defined, Radiant, Revealed, Wonderful, What's So Wonderful About Webster]
 premium:
 ---

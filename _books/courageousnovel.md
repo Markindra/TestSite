@@ -6,11 +6,12 @@ published: 2011-08-01
 coverImage: /assets/images/bookImages/courageous_novel.jpg
 family: Courageous
 buyLinks:
-  amazonBuy: https://www.amazon.com/Courageous-Novel-Randy-Alcorn/dp/1414358466/ref=sr_1_2?keywords=Courageous+Novel&qid=1637282739&qsid=141-6196979-4180442&sr=8-2&sres=1414358466%2C1645174352%2C150671448X%2C1506714471%2C1506714463%2CB076X9BDH1%2CB09CKYH6Y9%2C1496402782%2C1338317946%2C0441015670%2C154202871X%2CB08BRSQKJ2%2C0451465652%2C0061650730%2C1683227484%2C0593134826&srpt=ABIS_BOOK
-  cbdBuy: https://www.christianbook.com/courageous-paperback-randy-alcorn/9781414358468/pd/358468?event=PRCBD1
-  mardelBuy:
-  lifewayBuy: https://www.lifeway.com/en/product/courageous-P005453590
-  walmartBuy:
+  - name: amazon
+    buyURL: https://www.amazon.com/Courageous-Novel-Randy-Alcorn/dp/1414358466/ref=sr_1_2?keywords=Courageous+Novel&qid=1637282739&qsid=141-6196979-4180442&sr=8-2&sres=1414358466%2C1645174352%2C150671448X%2C1506714471%2C1506714463%2CB076X9BDH1%2CB09CKYH6Y9%2C1496402782%2C1338317946%2C0441015670%2C154202871X%2CB08BRSQKJ2%2C0451465652%2C0061650730%2C1683227484%2C0593134826&srpt=ABIS_BOOK
+  - name: cbd
+    buyURL: https://www.christianbook.com/courageous-paperback-randy-alcorn/9781414358468/pd/358468?event=PRCBD1
+  - name: lifeway
+    buyURL: https://www.lifeway.com/en/product/courageous-P005453590
 tags: [Resolution for Men, Resolution for Women]
 premium:
 ---
