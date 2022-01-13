@@ -1,4 +1,5 @@
 title: "The Kendrick Brothers"
+baseurl: https://markindra.github.io/TestSite/
 collections:
   films:
     output: true
