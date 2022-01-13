@@ -10,7 +10,7 @@
     <ul class="navbar-nav mr-auto">
       {% for item in site.data.navigation %}
       <li class="nav-item" {% if page.url == item.link %} class="active" {% endif %}>
-        <a class="nav-link" href="{{ item.link }}">{{ item.name | upcase }}</a>
+        <a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name | upcase }}</a>
       </li>
       {% endfor %}
     </ul>
