@@ -11,7 +11,7 @@ body { background-color: #F2F2F2 !important; }
 .bottom_nav { color: #03588C; font-size: 10pt; text-align: center; }
 
 /* home page styling */
-.indextron { background-image: url("/assets/images/kendrick_brothers_on_mission.jpg"); min-height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.indextron { background-image: url("TestSite/assets/images/kendrick_brothers_on_mission.jpg"); min-height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
 .mission { font-family: "trajan pro", serif; /* max-width: 300px; min-height: 200px; display: block; */ margin-left: auto; margin-right: auto; padding-top: 50px; }
 

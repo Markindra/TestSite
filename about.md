@@ -21,14 +21,14 @@ title: Our Values
   {% for item in site.data.values %}
     <div class="col-lg-6">
       <div class="card value-card my-3">
-        <img class="card-img" src="{{ item.imageURL }}" alt="{{ item.imageAlt }}">
+        <img class="card-img" src="{{ item.imageURL | relative_url }}" alt="{{ item.imageAlt }}">
           <div class="card-img-overlay text-white d-flex text-left align-items-end">
             <div>
               <h2>{{ item.name | upcase }}</h2>
                 <div class="valueBox w-75 px-3 py-1">
                   <h4>{{ item.description }}</h4>
                   {% if item.moreText %}
-                  <p><a class="text-white" href="{{ item.moreURL }}">{{ item.moreText }}</a></p>
+                  <p><a class="text-white" href="{{ item.moreURL | relative_url }}">{{ item.moreText }}</a></p>
                   {% endif %}
                 </div>
             </div>
