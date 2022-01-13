@@ -5,7 +5,17 @@ year: 2021-09-24
 packshot: /assets/images/filmpackshots/CourageousLegacy_pack.jpg
 trailer: https://www.youtube.com/embed/1XPgPiLeLWg
 buyLinks:
+  - name: lifeway
+    buyURL: https://www.lifeway.com/en/product/courageous-legacy-dvd-updated-10th-anniversary-P008016903
+  - name: walmart
+    buyURL: https://www.walmart.com/ip/Courageous-Legacy-Paperback-9781496464781/495996756
+  - name: cbd
+    buyURL: https://www.christianbook.com/courageous-legacy/9781496464781/pd/464784?event=ESRCN
+  - name: mardel
+    buyURL: https://www.mardel.com/Music-Video/Video/Drama/Courageous-Legacy,-DVD/p/3976891
 streamLinks:
+  - name: appleTV
+    streamURL: https://tv.apple.com/us/movie/courageous/umc.cmc.2u4ir23feajdjiqhwu8ih20uf
 tags: [Resolution for Men, Resolution for Women, Courageous]
 premium: true
 movieSite: http://www.courageousthemovie.com
