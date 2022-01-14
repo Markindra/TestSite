@@ -1,5 +1,5 @@
 title: "The Kendrick Brothers"
-baseurl: /TestSite
+baseurl:
 collections:
   films:
     output: true

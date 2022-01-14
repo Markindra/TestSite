@@ -6,7 +6,7 @@ title: Home
   <div class="container text-center">
     {% for item in site.data.homepage %}
     <h1 class="mission">{{ item.line | upcase }}</h1>
-    <a href="{{ item.buttonLink | relative_url }}"><button class="btn btn-primary indexButton">{{ item.button }}</button></a>
+    <a href="{{ item.buttonLink }}"><button class="btn btn-primary indexButton">{{ item.button }}</button></a>
     {% endfor %}
   </div>
 </div>

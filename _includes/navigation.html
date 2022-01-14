@@ -1,7 +1,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light topnav">
 <div class="container">
-  <a class="navbar-brand" href="/TestSite/index.html"><img style="height:40px;" src="TestSite/assets/images/logos/kb_logo_wide.png" alt="Kendrick Brothers Logo"></a>
+  <a class="navbar-brand" href="/index.html"><img style="height:40px;" src="/assets/images/logos/kb_logo_wide.png" alt="Kendrick Brothers Logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,7 +10,7 @@
     <ul class="navbar-nav mr-auto">
       {% for item in site.data.navigation %}
       <li class="nav-item" {% if page.url == item.link %} class="active" {% endif %}>
-        <a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name | upcase }}</a>
+        <a class="nav-link" href="{{ item.link }}">{{ item.name | upcase }}</a>
       </li>
       {% endfor %}
     </ul>
