@@ -5,14 +5,14 @@ layout: default
 <div class="row">
   <div class="col text-left">
     {% if page.next %}
-      <a class="nav-link" href="{{ page.next.url }}">
+      <a class="nav-link" href="{{ site.baseurl }}{{ page.next.url }}">
         <i class="bi bi-arrow-left"></i> {{ page.next.name }}
       </a>
     {% endif %}
   </div>
   <div class="col text-right">
     {% if page.previous %}
-      <a class="nav-link" href="{{ page.previous.url }}">
+      <a class="nav-link" href="{{ site.baseurl }}{{ page.previous.url }}">
         {{ page.previous.name }} <i class="bi bi-arrow-right"></i>
       </a>
     {% endif %}
@@ -29,7 +29,7 @@ layout: default
   </div>
   {% if page.coverImage %}
   <div class="pb-4 col-sm text-center">
-    <img class="w-50" src="{{ page.coverImage }}">
+    <img class="w-50" src="{{ site.baseurl }}{{ page.coverImage }}">
   </div>
   {% endif %}
   <div class="col-sm">
@@ -57,7 +57,7 @@ layout: default
         {% assign linked_logos = site.data.logos | where: "name", retailer.name %}
         {% for linked_logo in linked_logos %}
           <a href="{{ retailer.buyURL }}">
-            <img class="img-fluid btn btn-light" src="{{ linked_logo.logoURL }}" alt="{{ linked_logo.name }}">
+            <img class="img-fluid btn btn-light" src="{{ site.baseurl }}{{ linked_logo.logoURL }}" alt="{{ linked_logo.name }}">
           </a>
         {% endfor %}
       </div>
@@ -79,9 +79,9 @@ layout: default
   {% endunless %}
   {% for item in related_projects %}
         <div class="col-6 col-sm-4 col-lg-2 pt-3 text-center">
-          <a href="{{ item.url }}" alt="{{ item.title }} detail link">
+          <a href="{{ site.baseurl }}{{ item.url }}" alt="{{ item.title }} detail link">
             <div>
-              <img class="w-75 mb-2" alt="{{ item.title }} cover image" src="{{ item.coverImage }}">
+              <img class="w-75 mb-2" alt="{{ item.title }} cover image" src="{{ site.baseurl }}{{ item.coverImage }}">
               <div>
                 <p class="text-center font-weight-bold">{{ item.title }}</p>
               </div>

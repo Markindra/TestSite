@@ -17,7 +17,7 @@ streamLinks:
   - name: appleTV
     streamURL: https://tv.apple.com/us/movie/courageous/umc.cmc.2u4ir23feajdjiqhwu8ih20uf
 tags: [Resolution for Men, Resolution for Women, Courageous]
-premium: true
+premium:
 movieSite: http://www.courageousthemovie.com
 family: Courageous
 ---

@@ -8,11 +8,11 @@ title: Projects
     {% for item in site.data.banners %}
       {% if forloop.first == true %}
         <div class="carousel-item active">
-          <img src="{{ item.banner_image }}" class="d-block w-100">
+          <img src="{{ site.baseurl }}{{ item.banner_image }}" class="d-block w-100">
         </div>
       {% else %}
       <div class="carousel-item">
-        <img src="{{ item.banner_image }}" class="d-block w-100">
+        <img src="{{ site.baseurl }}{{ item.banner_image }}" class="d-block w-100">
       </div>
       {% endif %}
     {% endfor %}
@@ -39,14 +39,14 @@ title: Projects
     {% assign sortedFilms = site.films | sort: 'year' | reverse %}
     {% for film in sortedFilms %}
     <div class="card scrolling-card w-75 pt-3 px-3 m-3 border-light">
-      <a href="{{ film.url }}">
+      <a href="{{ site.baseurl }}{{ film.url }}">
         <div class="film-button">
-          <img class="card-img-top scrolling-thumbnail" src="{{ film.packshot }}">
+          <img class="card-img-top scrolling-thumbnail" src="{{ site.baseurl }}{{ film.packshot }}">
           <i class="bi bi-play-btn-fill"></i>
         </div>
       </a>
       <div class="card-body text-center">
-        <h3><a href="{{ film.url }}">{{ film.title }}</a></h3>
+        <h3><a href="{{ site.baseurl }}{{ film.url }}">{{ film.title }}</a></h3>
         <p>Released {{ film.year | date: "%Y" }}</p>
       </div>
     </div>
@@ -66,9 +66,9 @@ title: Projects
     {% assign sortedBooks = site.books | sort: 'published' | reverse %}
     {% for book in sortedBooks %}
     <div class="col-5 col-md-3 col-xl-2 card text-center scrolling-card mx-3 mb-3 border-light">
-      <img class="card-img-top" src="{{ book.coverImage }}">
+      <img class="card-img-top" src="{{ site.baseurl }}{{ book.coverImage }}">
       <div class="card-body">
-        <h5 class="card-title"><a class="stretched-link" href="{{ book.url }}">{{ book.title }}</a></h5>
+        <h5 class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a></h5>
       </div>
     </div>
     {% endfor %}
@@ -85,9 +85,9 @@ title: Projects
   <div class="scrolling-wrapper d-flex">
     {% for studie in site.studies %}
     <div class="col-5 col-md-3 col-xl-2 card text-center scrolling-card mx-3 mb-3 border-light">
-      <img class="card-img-top" src="{{ studie.coverImage }}">
+      <img class="card-img-top" src="{{ site.baseurl }}{{ studie.coverImage }}">
       <div class="card-body">
-        <h5 class="card-title"><a class="stretched-link" href="{{ studie.url }}">{{ studie.title }}</a></h5>
+        <h5 class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ studie.url }}">{{ studie.title }}</a></h5>
       </div>
     </div>
     {% endfor %}

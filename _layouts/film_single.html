@@ -5,33 +5,34 @@ layout: default
 <div class="row">
   <div class="col text-left">
     {% if page.next %}
-      <a class="nav-link" href="{{ page.next.url }}">
+      <a class="nav-link" href="{{ site.baseurl }}{{ page.next.url }}">
         <i class="bi bi-arrow-left"></i> {{ page.next.title }}
       </a>
     {% endif %}
   </div>
   <div class="col text-right">
     {% if page.previous %}
-      <a class="nav-link" href="{{ page.previous.url }}">
+      <a class="nav-link" href="{{ site.baseurl }}{{ page.previous.url }}">
         {{ page.previous.title }} <i class="bi bi-arrow-right"></i>
       </a>
     {% endif %}
   </div>
 </div>
 
+<div class="row min-vh-100 mx-3 mb-3 bg-white">
 <!-- Premium Banner -->
 {% assign premium_banner = page.premium | where_exp: "item", "item.image != nil" %}
 {% for item in premium_banner %}
 <div>
-  <img class="d-block w-100 mx-3" src="{{ item.image }}">
+  <img class="d-block w-100 mx-0" src="{{ site.baseurl }}{{ item.image }}">
 </div>
 {% endfor %}
-  <div>
-    <img class="d-block w-100" src="{{ page.premium.image }}">
-  </div>
+<!--  <div>
+    <img class="d-block w-100" src="{{ site.baseurl }}{{ page.premium.image }}">
+  </div> -->
 
 <!-- Film Details -->
-<div class="row min-vh-100 mx-3 mb-3 bg-white">
+
   {% if page.trailer %}
   <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="{{ page.trailer }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -84,7 +85,7 @@ layout: default
         {% assign linked_logos = site.data.logos | where: "name", retailer.name %}
         {% for linked_logo in linked_logos %}
           <a href="{{ retailer.buyURL }}">
-            <img class="img-fluid btn btn-light" src="{{ linked_logo.logoURL }}" alt="{{ linked_logo.name }}">
+            <img class="img-fluid btn btn-light" src="{{ site.baseurl }}{{ linked_logo.logoURL }}" alt="{{ linked_logo.name }}">
           </a>
         {% endfor %}
       </div>
@@ -109,7 +110,7 @@ layout: default
           {% assign streamer_logos = site.data.logos | where: "name", streamer.name %}
           {% for streamer_logo in streamer_logos %}
             <a href="{{ streamer.streamURL }}">
-              <img class="img-fluid btn btn-light" src="{{ streamer_logo.logoURL }}" alt="{{ streamer_logo.name }}">
+              <img class="img-fluid btn btn-light" src="{{ site.baseurl }}{{ streamer_logo.logoURL }}" alt="{{ streamer_logo.name }}">
             </a>
           {% endfor %}
         </div>
@@ -131,9 +132,9 @@ layout: default
   {% endunless %}
   {% for item in related_projects %}
         <div class="col-6 col-sm-4 col-lg-2 pt-3 text-center">
-          <a href="{{ item.url }}" alt="{{ item.title }} detail link">
+          <a href="{{ site.baseurl }}{{ item.url }}" alt="{{ item.title }} detail link">
             <div>
-              <img class="w-75 mb-2" alt="{{ item.title }} cover image" src="{{ item.coverImage }}">
+              <img class="w-75 mb-2" alt="{{ item.title }} cover image" src="{{ site.baseurl }}{{ item.coverImage }}">
               <div>
                 <p class="text-center font-weight-bold">{{ item.title }}</p>
               </div>

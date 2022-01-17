@@ -6,7 +6,7 @@ layout: default
 <!-- Full width image at beginning and maybe offset on wide screens -->
 <div class="row">
   <div class="col-12">
-  <img class="img-fluid" src="{{ page.featureImage }}">
+  <img class="img-fluid" src="{{ site.baseurl }}{{ page.featureImage }}">
   {% if page.featureCaption %}
     <p class="text-muted font-italic mx-0 px-3 mb-0 bg-white">{{ page.featureCaption }}</p>
   {% endif %}
@@ -50,9 +50,9 @@ layout: default
 		  {% endfor %}
       {% if sameTagCount >= minCommonTags %}
         <div class="card mx-3 px-3 pt-3 pb-0 article-box">
-          <img src="{{ post.featureImage }}" class="card-img-top" alt="{{ post.imageAlt }}">
+          <img src="{{ site.baseurl }}{{ post.featureImage }}" class="card-img-top" alt="{{ post.imageAlt }}">
           <div class="card-body">
-            <a href="{{ post.url }}"><h5 class="card-title">{{ post.title }}</h5></a>
+            <a href="{{ site.baseurl }}{{ post.url }}"><h5 class="card-title">{{ post.title }}</h5></a>
             <p class="card-text">{{ post.brief }}</p>
           </div>
         </div>
@@ -65,32 +65,3 @@ layout: default
   </div>
 </div>
 </div>
-
-
-
-
-<!--
-<div class="row mx-0 pt-3 px-3 bg-white">
-  <div class="col-12">
-    <h4>More Recent Updates</h4>
-  </div>
-
-<div class="row mb-5">
-    <div class="card-group">
-  {% for post in site.posts %}
-    {% if post.title != page.title %}
-      <div class="card mx-3 px-3 pt-3 pb-0 article-box">
-        <img src="{{ post.featureImage }}" class="card-img-top" alt="{{ post.imageAlt }}">
-        <div class="card-body">
-          <h5 class="card-title">{{ post.title }}</h5>
-          <p class="card-text">{{ post.brief }}</p>
-          <a href="{{ post.url }}" class="card-link">More</a>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-
-  </div>
-</div>
-</div>
--->

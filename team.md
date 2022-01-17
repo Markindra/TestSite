@@ -14,7 +14,7 @@ title: Our Team
     <div class="card mb-3 team-card">
       <div class="row no-gutters">
         <div class="col-4">
-          <img src="{{ member.imageURL }}" class="card-img mh-50 pl-3 pt-4" alt="{{ member.imageAlt }}">
+          <img src="{{ site.baseurl }}{{ member.imageURL }}" class="card-img mh-50 pl-3 pt-4" alt="{{ member.imageAlt }}">
         </div>
         <div class="col-8">
           <div class="card-body">
