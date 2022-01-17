@@ -67,7 +67,7 @@ title: Projects
     {% for book in sortedBooks %}
     <div class="col-5 col-md-3 col-xl-2 card text-center scrolling-card mx-3 mb-3 border-light">
       <img class="card-img-top" src="{{ site.baseurl }}{{ book.coverImage }}">
-      <div class="card-body">
+      <div class="card-body px-0">
         <p class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a></p>
       </div>
     </div>
