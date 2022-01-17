@@ -2,7 +2,7 @@
 layout: film_single
 title: Flywheel
 year: 2003-04-09
-packshot: /assets/images/filmpackshots/Flywheel_pack.jpg
+packshot: /assets/images/filmpackshots/FlyWheel_pack.jpg
 trailer: https://www.youtube.com/embed/jG68TDaM8js
 buyLinks:
   - name: amazon
