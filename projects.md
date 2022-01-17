@@ -68,7 +68,7 @@ title: Projects
     <div class="col-5 col-md-3 col-xl-2 card text-center scrolling-card mx-3 mb-3 border-light">
       <img class="card-img-top" src="{{ site.baseurl }}{{ book.coverImage }}">
       <div class="card-body">
-        <h5 class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a></h5>
+        <p class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a></p>
       </div>
     </div>
     {% endfor %}
@@ -87,7 +87,7 @@ title: Projects
     <div class="col-5 col-md-3 col-xl-2 card text-center scrolling-card mx-3 mb-3 border-light">
       <img class="card-img-top" src="{{ site.baseurl }}{{ studie.coverImage }}">
       <div class="card-body">
-        <h5 class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ studie.url }}">{{ studie.title }}</a></h5>
+        <p class="card-title"><a class="stretched-link" href="{{ site.baseurl }}{{ studie.url }}">{{ studie.title }}</a></p>
       </div>
     </div>
     {% endfor %}
