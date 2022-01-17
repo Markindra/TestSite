@@ -6,7 +6,7 @@
   </p>
   <div class="social_box">
     {% for item in site.data.social %}
-    <a href="{{ site.baseurl }}{{ item.link }}" target="_blank"><img src="{{ site.baseurl }}{{ item.icon }}" class="social_icon"></a>
+    <a href="{{ item.link }}" target="_blank"><img src="{{ site.baseurl }}{{ item.icon }}" class="social_icon"></a>
     {% endfor %}
   </div>
 </div>
