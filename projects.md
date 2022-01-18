@@ -38,11 +38,10 @@ title: Projects
   <div class="scrolling-wrapper d-flex">
     {% assign sortedFilms = site.films | sort: 'year' | reverse %}
     {% for film in sortedFilms %}
-    <div class="card scrolling-card w-75 pt-3 px-3 m-3 border-light">
+    <div class="card scrolling-card w-75 pt-0 px-0 m-3 border-light">
       <a href="{{ site.baseurl }}{{ film.url }}">
         <div class="film-button">
           <img class="card-img-top scrolling-thumbnail" src="{{ site.baseurl }}{{ film.packshot }}">
-          <i class="bi bi-play-btn-fill"></i>
         </div>
       </a>
       <div class="card-body text-center">
