@@ -5,24 +5,24 @@ year: 2015-08-28
 packshot: /assets/images/filmpackshots/WarRoom_pack.jpg
 trailer: https://www.youtube.com/embed/s28nvgHqu18
 buyLinks:
-  - name: amazon
+  - name: Amazon
     buyURL: https://www.amazon.com/Room-Blu-ray-UltraViolet-Priscilla-Shirer/dp/B014LIIXZ0/ref=tmm_blu_swatch_0?_encoding=UTF8&qid=1532650120&sr=8-4
-  - name: cbd
+  - name: Christian Books
     buyURL: https://www.christianbook.com/war-room/pd/007399?event=DVDs|1006962
-  - name: mardel
+  - name: Mardel
     buyURL:
-  - name: lifeway
+  - name: Lifeway
     buyURL: https://www.lifeway.com/en/product/war-room-dvd-P006101628
-  - name: walmart
+  - name: Walmart
     buyURL: https://www.walmart.com/ip/War-Room-Blu-ray/47334641
 streamLinks:
-  - name: amazonPrime
+  - name: Amazon Prime
     streamURL: https://www.amazon.com/War-Room-Alex-Kendrick/dp/B017OJL48G/ref=tmm_aiv_swatch_1?_encoding=UTF8&qid=1532650120&sr=8-4
-  - name: appleTV
+  - name: Apple TV
     streamURL: https://itunes.apple.com/us/movie/war-room/id1028537705
-  - name: googlePlay
+  - name: Google Play
     streamURL: https://play.google.com/store/movies/details/War_Room?id=FWjQf0JvU1w
-  - name: vudu
+  - name: Vudu
     streamURL: https://www.vudu.com/content/movies/details/War-Room/704676
 tags: [Battle Plan for Prayer]
 premium:

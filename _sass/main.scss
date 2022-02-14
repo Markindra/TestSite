@@ -1,6 +1,23 @@
 /* Basic body styling */
+
+/* Typography */
 body {
   background-color: #F2F2F2 !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-weight: 700;
+}
+
+h2 h3 h4 h5 {
+  font-family: 'Hind Madurai', sans-serif !important;
+}
+
+p {
+  font-family: 'Hind Madurai', sans-serif !important;
+  font-weight: 300 !important;
 }
 
 .master {
@@ -13,6 +30,83 @@ body {
 .topnav {
   background-color: #F2F2F2;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects */
+.project-feature {
+  background-image: url($baseurl + $film-feature-bkgd);
+  background-size: cover;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 70% 0%;
+
+}
+
+.project-feature-scrim {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #f2f2f2, rgba(0,0,0,0) 50%);
+  padding-top: 100px;
+}
+
+.project-feature-text {
+  color: #011826;
+  /* background-color: rgba( 86, 87, 89, 0.3); */
+}
+
+.all-icon {
+  height: 50px;
+  width:auto;
+}
+
+.film-cards {
+  background-color: #F2F2F2 !important;
+  border-style: none !important;
+}
+
+.icon {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.card-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.other-book-img {
+  height: 50px;
+  width: auto;
+}
+
+/* Posts */
+.post-feature {
+  background-image: url($baseurl + $post-feature-bkgd);
+  background-size: cover;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+.post-feature-title {
+  bottom: 15px;
+  left: 15px;
+}
+
+a.post-card {
+  color: #000000;
+  text-decoration: none;
+}
+
+.banner-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Bottom Nav */

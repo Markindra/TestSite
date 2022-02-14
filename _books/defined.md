@@ -6,16 +6,17 @@ published: 2019-08-06
 coverImage: /assets/images/bookImages/defined_book_cover.jpg
 family: Overcomer
 buyLinks:
-  - name: amazon
+  - name: Amazon
     buyURL: https://www.amazon.com/Defined-Who-God-Says-You/dp/1535948922/ref=sr_1_2?keywords=Defined&qid=1637270607&qsid=141-6196979-4180442&sr=8-2&sres=153596006X%2C1535948922%2C1462794963%2C1535960078%2C1535956798%2C1535960132%2C153595678X%2C1535970138%2C0132177153%2CB07KXZBD9J%2C0358004411%2C0063075415%2CB09L3392B4%2C1535956763%2C1631956116%2C080100845X&srpt=ABIS_BOOK
-  - name: cbd
+  - name: Christian Books
     buyURL: https://www.christianbook.com/defined-who-god-says-you-are/stephen-kendrick/9781535948920/pd/948920?event=ESRCN
-  - name: lifeway
+  - name: Lifeway
     buyURL: https://www.lifeway.com/en/product/defined-P005813392
-  - name: walmart
+  - name: Walmart
     buyURL: https://www.walmart.com/ip/Defined-Who-God-Says-You-Are-Hardcover-9781535948920/456525853
 tags: [Radiant, Revealed, Overcomer]
 premium:
+type: anchor
 ---
 Inspired by the Kendrick brothers’ movie OVERCOMER, and written by the #1 New York Times best-selling author team behind The Love Dare and The Battle Plan for Prayer, comes an exciting new resource about discovering your God-given identity and embracing the wonder of who you were created to be.
 

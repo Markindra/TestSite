@@ -1,31 +1,29 @@
 ---
 layout: default
 ---
-<!-- Include previous and next article links at top -->
-
-<!-- Full width image at beginning and maybe offset on wide screens -->
-<div class="row">
-  <div class="col-12">
-  <img class="img-fluid" src="{{ site.baseurl }}{{ page.featureImage }}">
-  {% if page.featureCaption %}
-    <p class="text-muted font-italic mx-0 px-3 mb-0 bg-white">{{ page.featureCaption }}</p>
-  {% endif %}
+<section class="container post-content">
+  <div class="row py-3">
+    <div class="col-12">
+      <h1 class="display-1 text-center">{{ page.title | upcase }}</h1>
+    </div>
   </div>
-</div>
-<div class="row mx-0 pt-3 bg-white">
-  <div class="col-12">
-    <h1 class="text-center">{{ page.title | upcase }}</h1>
+  <div class="row">
+    <div class="col-12">
+      <img class="img-fluid" src="{{ site.baseurl }}{{ page.featureImage }}">
+      <!-- {% if page.featureCaption %}
+        <p class="text-muted text-center font-italic mx-0 px-3 mb-0">{{ page.featureCaption }}</p>
+      {% endif %} -->
+    </div>
   </div>
-<!-- format date in a nice way. Do we need authors? -->
-  <div class="col-12">
-    <h5 class="text-muted">{{ page.date | date_to_string }} - {{page.author}}</h5>
-
+  <div class="row mx-0 pt-3">
+    <div class="col-12">
+      <p class="text-muted text-center"><small>{{ page.date | date_to_string }} - {{page.author}}</small></p>
+    </div>
   </div>
-</div>
-<!-- To break up the article, let's include a stylized pull quote -->
-<div class="row px-3 mb-3 mx-0 bg-white">
+  <div class="row px-3 mb-3 mx-0">
     {{ content }}
-</div>
+  </div>
+</section>
 
 <!-- Related content goes here. Styled as thumbnail, Title, and 60 character excerpt, separated by lines -->
 {% assign maxRelated = 5 %}

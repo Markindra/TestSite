@@ -3,26 +3,26 @@ layout: film_single
 title: Show Me the Father
 year: 2021-09-10
 packshot: /assets/images/filmpackshots/ShowMeTheFather_pack.jpg
-trailer: https://www.youtube.com/embed/AJvi-wAsjKI
+trailer: https://www.youtube.com/embed/AJvi-wAsjKI?&autoplay=1
 buyLinks:
-  - name: amazon
+  - name: Amazon
     buyURL: https://www.amazon.com/Show-Me-Father-Sherman-Smith/dp/B09FSCFL7N/ref=sr_1_1_sspa?crid=2U5B5L8NXTDRC&keywords=show+me+the+father&qid=1642091292&sprefix=show+me+the+father%2Caps%2C390&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzR1JXTFUyU0xHRzhZJmVuY3J5cHRlZElkPUEwNjk3MTY0MUc0QTY1UUg5WU03NSZlbmNyeXB0ZWRBZElkPUEwNTMwNjcyNEJVMkJQQk8yVlI3JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
-  - name: lifeway
+  - name: Lifeway
     buyURL: https://www.lifeway.com/en/product/show-me-the-father-P008016904
-  - name: walmart
+  - name: Walmart
     buyURL: https://www.walmart.com/ip/Show-Me-the-Father-DVD/969397648
-  - name: mardel
+  - name: Mardel
     buyURL: https://www.mardel.com/Music-Video/Video/New-Movies/Show-Me-The-Father,-DVD/p/3976909
-  - name: cbd
+  - name: Christian Books
     buyURL: https://www.christianbook.com/show-me-the-father/pd/158345?event=ESRCN
 streamLinks:
-  - name: amazonPrime
+  - name: Amazon Prime
     streamURL: https://www.amazon.com/Show-Me-Father-Sherman-Smith/dp/B09HH6G6WN/ref=tmm_aiv_swatch_0?_encoding=UTF8&qid=1642091802&sr=1-3
-  - name: appleTV
+  - name: Apple TV
     streamURL: https://tv.apple.com/us/movie/show-me-the-father/umc.cmc.7fg3p4tpgfwpvhrgjw017jggg
-  - name: googlePlay
+  - name: Google Play
     streamURL: https://play.google.com/store/movies/details/Show_Me_the_Father?id=avCkYhxCIHg.P
-  - name: vudu
+  - name: Vudu
     streamURL: https://www.vudu.com/content/movies/details/Show-Me-the-Father/1927605
 tags: [Show Me the Father]
 premium: false

@@ -1,6 +1,9 @@
 ---
 ---
 $baseurl: "{{ site.baseurl }}";
+$film-feature-bkgd: {% for item in site.data.banners %} "{{ item.banner_image }}" {% endfor %};
+$post-feature-bkgd: {% for item in site.posts limit:1 %} "{{ item.featureImage }}" {% endfor %};
 @import "main";
 @import "bootstrap/scss/bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Source+Sans+Pro:wght@700&display=swap');

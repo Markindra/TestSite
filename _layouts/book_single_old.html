@@ -1,0 +1,93 @@
+---
+layout: default
+---
+<!-- Book Navigation -->
+<div class="row">
+  <div class="col text-left">
+    {% if page.next %}
+      <a class="nav-link" href="{{ site.baseurl }}{{ page.next.url }}">
+        <i class="bi bi-arrow-left"></i> {{ page.next.name }}
+      </a>
+    {% endif %}
+  </div>
+  <div class="col text-right">
+    {% if page.previous %}
+      <a class="nav-link" href="{{ site.baseurl }}{{ page.previous.url }}">
+        {{ page.previous.name }} <i class="bi bi-arrow-right"></i>
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Book Detail -->
+<div class="row min-vh-100 mx-3 mb-3 bg-white">
+  <div class="col-12 px-3 pt-3 text-center">
+    <h1 class="text-center">{{ page.title }}<small class="text-muted"><br>{{ page.subtitle }}</h1>
+    {% if page.published %}</small>
+      <p>First published on {{ page.published | date_to_string: "ordinal", "US" }}</p>
+    {% endif %}
+  </div>
+  {% if page.coverImage %}
+  <div class="pb-4 col-sm text-center">
+    <img class="w-50" src="{{ site.baseurl }}{{ page.coverImage }}">
+  </div>
+  {% endif %}
+  <div class="col-sm">
+    {{ content }}
+  </div>
+</div>
+
+<!-- Add Purchase Links here -->
+<div class="row mx-3 py-3">
+  <!-- Purchase Links Column  -->
+  {% assign retailers = page.buyLinks | where_exp: "item", "item.buyURL != nil" %}
+  {% if retailers %}
+  <div class="col-sm mb-3 mr-1 py-3 bg-white">
+    <div class="row">
+      <div class="col">
+        <div class="text-center">
+          <h5>Purchase from These Retailers</h5>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="row justify-content-around">
+      {% for retailer in retailers %}
+      <div class="col-6 col-sm-6 col-lg-4 my-3">
+        {% assign linked_logos = site.data.logos | where: "name", retailer.name %}
+        {% for linked_logo in linked_logos %}
+          <a href="{{ retailer.buyURL }}">
+            <img class="img-fluid btn btn-light" src="{{ site.baseurl }}{{ linked_logo.logoURL }}" alt="{{ linked_logo.name }}">
+          </a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- Add related projects -->
+{% assign all_projects = site.films | concat: site.studies %}
+  {% assign related_projects = all_projects | where_exp: "item", "item.family == page.family" %}
+  {% unless related_projects == empty %}
+  <div class="row mx-3 pt-3 px-3 bg-white">
+    <div class="col-12">
+      <h4 class="text-center">Related Projects</h4>
+    </div>
+  </div>
+<div class="row mx-3 p-3 mb-5 bg-white">
+  {% endunless %}
+  {% for item in related_projects %}
+        <div class="col-6 col-sm-4 col-lg-2 pt-3 text-center">
+          <a href="{{ site.baseurl }}{{ item.url }}" alt="{{ item.title }} detail link">
+            <div>
+              <img class="w-75 mb-2" alt="{{ item.title }} cover image" src="{{ site.baseurl }}{{ item.coverImage }}">
+              <div>
+                <p class="text-center font-weight-bold">{{ item.title }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </a>
+  {% endfor %}
+</div>

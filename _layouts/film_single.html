@@ -2,137 +2,124 @@
 layout: default
 ---
 <!-- Breadcrumbs or previous/next links -->
-<div class="row">
-  <div class="col text-left">
-    {% if page.next %}
-      <a class="nav-link" href="{{ site.baseurl }}{{ page.next.url }}">
-        <i class="bi bi-arrow-left"></i> {{ page.next.title }}
-      </a>
-    {% endif %}
-  </div>
-  <div class="col text-right">
-    {% if page.previous %}
-      <a class="nav-link" href="{{ site.baseurl }}{{ page.previous.url }}">
-        {{ page.previous.title }} <i class="bi bi-arrow-right"></i>
-      </a>
-    {% endif %}
-  </div>
-</div>
-
-<div class="row min-vh-100 mx-3 mb-3 bg-white">
-<!-- Premium Banner -->
-{% assign premium_banner = page.premium | where_exp: "item", "item.image != nil" %}
-{% for item in premium_banner %}
-<div>
-  <img class="d-block w-100 mx-0" src="{{ site.baseurl }}{{ item.image }}">
-</div>
-{% endfor %}
-<!--  <div>
-    <img class="d-block w-100" src="{{ site.baseurl }}{{ page.premium.image }}">
-  </div> -->
-
-<!-- Film Details -->
-
-  {% if page.trailer %}
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="{{ page.trailer }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  {% endif %}
-  <div class="px-3">
-    <h1 class="text-center">{{ page.title }}</h1>
-    <p class="text-muted text-center"><i>Released on {{ page.year | date_to_string: "ordinal", "US" }}</i></p>
-    {{ content | markdownify }}
-  </div>
-  {% if page.movieSite %}
-  <div class="px-3">
-    <p class="bold">
-      For more information, go to
-      <a href="{{ page.movieSite }}" alt="Official {{ page.name }} website">
-        {{ page.movieSite | remove:'http://www.' | split:'/' | first }}
-      </a>
-    </p>
-  </div>
-  {% endif %}
-  {% if page.relatedSite %}
-  <div class="px-3">
-    <p class="bold">
-      For resources related to {{ page.name }}, go to
-        <a href="{{ page.relatedSite }}" alt="{{ page.relatedSite | remove: 'http://' | spliit:'/' | first }}">
-          {{ page.relatedSite | remove:'http://www.' | split:'/' | first }}
-        </a>
-    </p>
-  </div>
-  {% endif %}
-</div>
-
-<!-- Purchase and Streaming Links -->
-<div class="row mx-3 py-3">
-  <!-- Purchase Links Column  -->
-  {% assign retailers = page.buyLinks | where_exp: "item", "item.buyURL != nil" %}
-  {% if retailers %}
-  <div class="col-sm mb-3 mr-1 py-3 bg-white">
+<div class="container">
+  <!-- <section class="film-navigation">
     <div class="row">
-      <div class="col">
-        <div class="text-center">
-          <h5>Purchase from These Retailers</h5>
-        </div>
+      <div class="col text-left">
+        {% if page.next %}
+        <a class="nav-link" href="{{ site.baseurl }}{{ page.next.url }}">
+          <i class="bi bi-arrow-left"></i> {{ page.next.title }}
+        </a>
+        {% endif %}
+      </div>
+      <div class="col text-right">
+        {% if page.previous %}
+          <a class="nav-link" href="{{ site.baseurl }}{{ page.previous.url }}">
+            {{ page.previous.title }} <i class="bi bi-arrow-right"></i>
+          </a>
+        {% endif %}
       </div>
     </div>
-    {% endif %}
-    <div class="row justify-content-around">
-      {% for retailer in retailers %}
-      <div class="col-6 col-sm-6 col-lg-4 my-3">
-        {% assign linked_logos = site.data.logos | where: "name", retailer.name %}
-        {% for linked_logo in linked_logos %}
-          <a href="{{ retailer.buyURL }}">
-            <img class="img-fluid btn btn-light" src="{{ site.baseurl }}{{ linked_logo.logoURL }}" alt="{{ linked_logo.name }}">
-          </a>
-        {% endfor %}
+  </section> -->
+
+  <section class="film-premium">
+    <div class="row min-vh-100 mb-3 bg-white">
+      {% assign premium_banner = page.premium | where_exp: "item", "item.image != nil" %}
+      {% for item in premium_banner %}
+      <div>
+        <a href="{{ site.baseurl }}{{ item.premium_url }}">
+          <img class="d-block w-100 mx-0" src="{{ site.baseurl }}{{ item.image }}">
+        </a>
       </div>
       {% endfor %}
     </div>
-  </div>
-  <!-- Stream Link Column -->
-  {% assign streamers = page.streamLinks | where_exp: "item", "item.streamURL != nil" %}
-  {% if streamers %}
-  <div class="col-sm mb-3 ml-1 py-3 bg-white">
-    <div class="row">
-      <div class="col">
-        <div class="text-center">
-          <h5>Stream Today</h5>
-        </div>
-      </div>
+  </section>
+
+  <section class="film-trailer">
+    {% if page.trailer %}
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="{{ page.trailer }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     {% endif %}
-    <div class="row justify-content-around">
-      {% for streamer in streamers %}
-        <div class="col-6 col-sm-6 col-lg-4 my-3">
-          {% assign streamer_logos = site.data.logos | where: "name", streamer.name %}
-          {% for streamer_logo in streamer_logos %}
-            <a href="{{ streamer.streamURL }}">
-              <img class="img-fluid btn btn-light" src="{{ site.baseurl }}{{ streamer_logo.logoURL }}" alt="{{ streamer_logo.name }}">
-            </a>
+    <div class="px-3">
+      <h1 class="text-center mt-5">{{ page.title }}</h1>
+      <p class="text-muted text-center"><i>Released on {{ page.year | date_to_string: "ordinal", "US" }}</i></p>
+
+    </div>
+  </section>
+
+  <section class="film-info row pb-3">
+    <div class="film-details col-12 {% if page.buyLinks %}col-lg-6{% else %}{% endif %}">
+      <div class="px-0">
+        {{ content | markdownify }}
+      </div>
+      {% if page.movieSite %}
+      <div class="px-0">
+        <p class="bold">For more information, go to
+          <a href="{{ page.movieSite }}" alt="Official {{ page.name }} website">{{ page.movieSite | remove:'http://www.' | split:'/' | first }}</a>
+        </p>
+      </div>
+      {% endif %}
+      {% if page.relatedSite %}
+      <div class="px-0">
+        <p class="bold">For resources related to {{ page.name }}, go to <a href="{{ page.relatedSite }}" alt="{{ page.relatedSite | remove: 'http://' | spliit:'/' | first }}">{{ page.relatedSite | remove:'http://www.' | split:'/' | first }}</a>
+        </p>
+      </div>
+      {% endif %}
+    </div>
+    {% if page.buyLinks %}
+    <div class="film-links d-flex flex-column flex-grow-1 col-12 col-lg-6">
+      <div class="row">
+        <div class="col-6">
+          <h5 class="text-center font-weight-bold"><i class="bi bi-play-circle"></i> Stream</h5>
+          {% assign streamers = page.streamLinks | where_exp: "item", "item.streamURL != nil" %}
+          {% for streamer in streamers %}
+            <div class="col-12">
+              <a href="{{ streamer.streamURL }}">
+                <p class="text-center">{{ streamer.name }}</p>
+              </a>
+            </div>
           {% endfor %}
         </div>
-      {% endfor %}
+        <div class="col-6">
+          <h5 class="text-center font-weight-bold"><i class="bi bi-cart"></i> Purchase</h5>
+          {% assign retailers = page.buyLinks | where_exp: "item", "item.buyURL != nil" %}
+          {% for retailer in retailers %}
+            <div class="col-12">
+              <a href="{{ retailer.buyURL }}">
+                <p class="text-center">{{ retailer.name }}</p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+<!--
+      <div class="row px-5 mt-auto">
+        <p class="text-center mx-auto"><small><sup>*</sup>We may earn a small commission when you make a purchase through the links above. There is no additional cost to you</small></p>
+      </div>
     </div>
-  </div>
+  -->
+    {% else %}
+    {% endif %}
+  </section>
 </div>
 
+
 <!-- Add related projects -->
+<section class="related-projects">
 {% assign all_projects = site.books | concat: site.studies %}
   {% assign related_projects = all_projects | where_exp: "item", "item.family == page.family" %}
   {% unless related_projects == empty %}
-  <div class="row mx-3 pt-3 px-3 bg-white">
+  <div class="row pt-5 px-0 bg-white">
     <div class="col-12">
-      <h4 class="text-center">Related Projects</h4>
+      <h4 class="text-center">The {{ page.title }} Family of Projects</h4>
     </div>
   </div>
-<div class="row mx-3 p-3 mb-5 bg-white">
+<div class="row py-3 mb-3 justify-content-center bg-white">
   {% endunless %}
   {% for item in related_projects %}
         <div class="col-6 col-sm-4 col-lg-2 pt-3 text-center">
-          <a href="{{ site.baseurl }}{{ item.url }}" alt="{{ item.title }} detail link">
+          <a class="text-dark" href="{{ site.baseurl }}{{ item.url }}" alt="{{ item.title }} detail link">
             <div>
               <img class="w-75 mb-2" alt="{{ item.title }} cover image" src="{{ site.baseurl }}{{ item.coverImage }}">
               <div>
@@ -144,3 +131,35 @@ layout: default
       </a>
   {% endfor %}
 </div>
+</section>
+
+
+<section class="container">
+  <div class="row mx-3">
+    <div class="col-12">
+      <h3 class="text-center">Other Films</h3>
+    </div>
+  </div>
+  {% assign sortedFilms = site.films | sort: 'year' | reverse %}
+  {% for item in sortedFilms %}
+    {% if item.title != page.title %}
+            <a class="text-dark" href="{{ site.baseurl }}{{ item.url }}">
+      <div class="row m-3">
+
+        <div class="col-6 col-lg-4 d-flex align-items-center">
+          <img class="img-fluid" src="{{ site.baseurl }}{{ item.packshot }}">
+        </div>
+        <div class="col-6 col-lg-8 d-flex align-items-center">
+          <div>
+            <h5 class="d-none">{{ item.title }}</h5>
+            <p class="d-lg-none">{{ item.excerpt | strip_html | truncatewords:10 }}</p>
+            <p class="d-none d-lg-block">{{ item.excerpt | strip_html | truncatewords:30 }}</p>
+          </div>
+        </div>
+
+      </div>
+      </a>
+      <hr class="m-3">
+    {% endif %}
+  {% endfor %}
+</section>

@@ -9,16 +9,17 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div class="container master">
-    {% include navigation.html %}
+    <header class="fixed-top d-flex align-items-center topnav">
+      {% include navigation.html %}
+    </header>
+    <main class="container-fluid px-0 master">
 
+        {{ content }}
 
-    {{ content }}
-
-    </div>
-    {% include bottomNav.html %}
-
+    </main>
+    <footer>
+      {% include bottomNav.html %}
+    </footer>
     {% include scripts.html %}
-
   </body>
 </html>

@@ -1,35 +1,35 @@
-- name: amazon
+- name: Amazon
   logoURL: /assets/images/logos/available_at_amazon_en_vertical_drk.png
   logoAlt: Amazon.com logo
 
-- name: lifeway
+- name: Lifeway
   logoURL: /assets/images/logos/lifeway_logo_gray_shadow.png
   logoAlt: Lifeway logo
 
-- name: mardel
+- name: Mardel
   logoURL: /assets/images/logos/original_mardel_logo_m_HR.png
   logoAlt: Mardel logo
 
-- name: cbd
+- name: Christian Book Distributors
   logoURL: /assets/images/logos/cbd.png
   logoAlt: Christian Book Distributors logo
 
-- name: walmart
+- name: Walmart
   logoURL: /assets/images/logos/Walmart spark logo-digital-alpha.png
   logoAlt: Walmart logo
 
-- name: amazonPrime
+- name: Amazon Prime
   logoURL: /assets/images/logos/Prime_VIdeo_Logo_Mature_Market_Pitch_Dark_Blue_RGB.png
   logoAlt: Amazon Prime logo
 
-- name: appleTV
+- name: AppleTV
   logoURL: /assets/images/logos/UK-US_Apple_TV_Watch_Badge_RGB_onscreen_092419.svg
   logoAlt: Apple TV logo
 
-- name: googlePlay
+- name: Google Play
   logoURL: /assets/images/logos/google-play-badge.png
   logoAlt: Google Play logo
 
-- name: vudu
+- name: Vudu
   logoURL: /assets/images/logos/vudu_logo.png
   logoAlt: Vudu logo
